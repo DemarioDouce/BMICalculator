@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     @IBAction func heightSliderChanged(_ sender: UISlider) {
         
         //Round to two decimal place and assign to height label
-        heightLabel.text = String(format: "%.2f", sender.value)
+        heightLabel.text = String(format: "%.2fm", sender.value)
         
     }
     
@@ -34,8 +34,22 @@ class ViewController: UIViewController {
     @IBAction func weightSliderChanged(_ sender: UISlider) {
         
         //Round to whole number and assign to weight label
-        weightLabel.text = String(format: "%.0f", sender.value)
+        weightLabel.text = String(format: "%.0fKg", sender.value)
     }
     
+    //Calculate button function
+    @IBAction func CalculatePressed(_ sender: UIButton) {
+        
+        //init heightslider
+        let height = heightSlider.value
+        
+        //init weightslider
+        let weight = weightSlider.value
+        
+        //Formula to calculate BMI
+        let BMI = String(format: "%.2f", weight/pow(height, 2))
+        
+        print("BMI is \(BMI)")
+    }
 }
 
