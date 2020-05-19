@@ -9,12 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    //UI elements
+    @IBOutlet weak var heightSlider: UISlider!
+    @IBOutlet weak var weightSlider: UISlider!
+    @IBOutlet weak var heightLabel: UILabel!
+    @IBOutlet weak var weightLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
+    
+    
+    //function for height slider
+    @IBAction func heightSliderChanged(_ sender: UISlider) {
+        
+        //Round to two decimal place and assign to height label
+        heightLabel.text = String(format: "%.2f", sender.value)
+        
+    }
+    
+    //function for weight slider
+    @IBAction func weightSliderChanged(_ sender: UISlider) {
+        
+        //Round to whole number and assign to weight label
+        weightLabel.text = String(format: "%.0f", sender.value)
+    }
+    
 }
 
