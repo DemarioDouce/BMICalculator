@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
     
+    
+    //Run onetime on start up
     override func viewDidLoad() {
         super.viewDidLoad()
         
