@@ -51,7 +51,16 @@ class ViewController: UIViewController {
         //Formula to calculate BMI
         let BMI = String(format: "%.2f", weight/pow(height, 2))
         
-        print("BMI is \(BMI)")
+     
+        
+        //Show second view controller
+        let secondVC = SecondViewController()
+        
+        //Assign bmi value to second vc
+        secondVC.bmiValue = BMI
+        
+        //Open second view
+        self.present(secondVC, animated: true, completion: nil)
     }
 }
 
