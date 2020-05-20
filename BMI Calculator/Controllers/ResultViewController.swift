@@ -9,14 +9,21 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+    
+    //UI Elements
+    @IBOutlet weak var bmiLabel: UILabel!
+    @IBOutlet weak var adviceLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-     
+        
+        
     }
     
-
-
-
+    
+    //Function for recal button
+    @IBAction func recalculatePressed(_ sender: UIButton) {
+    }
+    
+    
 }

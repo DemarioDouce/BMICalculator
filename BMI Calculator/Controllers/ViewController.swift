@@ -53,14 +53,14 @@ class ViewController: UIViewController {
         
      
         
-        //Show second view controller
-        let secondVC = SecondViewController()
-        
-        //Assign bmi value to second vc
-        secondVC.bmiValue = BMI
-        
-        //Open second view
-        self.present(secondVC, animated: true, completion: nil)
+//        //Show second view controller
+//        let HardCV = HardCodedView()
+//
+//        //Assign bmi value to second vc
+//        HardCV.bmiValue = BMI
+//
+//        //Open second view
+//        self.present(HardCV, animated: true, completion: nil)
     }
 }
 
