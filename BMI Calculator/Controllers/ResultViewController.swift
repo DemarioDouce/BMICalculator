@@ -10,7 +10,7 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
-    //variable
+    //global variable
     var bmiValue:String?
     
     //UI Elements
