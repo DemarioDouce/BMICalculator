@@ -12,6 +12,8 @@ class ResultViewController: UIViewController {
     
     //global variable
     var bmiValue:String?
+    var color: UIColor?
+    var advice: String?
     
     //UI Elements
     @IBOutlet weak var bmiLabel: UILabel!
@@ -21,6 +23,8 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
         
         bmiLabel.text = bmiValue
+        adviceLabel.text = advice
+        view.backgroundColor = color
         
     }
     
